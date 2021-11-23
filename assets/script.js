@@ -1,10 +1,9 @@
 let yourName = "Keoki Casey"
 
-let gb = 0      // Gingerbread
-let cc = 0      // Chocolate Chip
-let sugar = 0   // Sugar Sprinkle
-let total = 0   // Total
-
+let gb = 0
+let cc = 0
+let sugar = 0
+let total = 0
 let gbQuantity = document.querySelector('#qty-gb')
 let ccQuantity = document.querySelector('#qty-cc')
 let sugarQuantity = document.querySelector('#qty-sugar')
@@ -26,10 +25,8 @@ if(total === null){
     total = 0
 }
 
-// Code to update name display 
 document.getElementById('credit').textContent = `Created by ${yourName}`
 
-// Event listener for clicks on the "+" button for Gingerbread cookies
 document.getElementById('add-gb').addEventListener('click', function(){
     gb = parseInt(gb) + 1
     gbQuantity.textContent = gb
